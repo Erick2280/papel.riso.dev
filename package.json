@@ -1,5 +1,5 @@
 {
-	"name": "Paper-io",
+	"name": "papel.riso.dev",
 	"version": "0.0.1",
 	"description": "An multiplayer-IO type game (cloned from Paper-IO)",
 	"main": "server.js",
@@ -7,16 +7,12 @@
 		"start": "node server.js",
 		"build": "browserify client.js | uglifyjs > public/js/bundle.js"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/stevenjoezhang/paper.io.git"
-	},
 	"keywords": [
 		"Paper-IO",
 		"IO",
 		"Game"
 	],
-	"author": "theKidOfArcrania",
+	"author": "Erick Almeida",
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/stevenjoezhang/paper.io/issues"
@@ -28,5 +24,8 @@
 		"socket.io": "^2.2.0",
 		"socket.io-client": "^2.2.0",
 		"uglify-es": "^3.3.9"
+	},
+	"engines": {
+		"node": "10.x"
 	}
 }

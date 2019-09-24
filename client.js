@@ -20,10 +20,10 @@ function run(port, flag) {
 $(document).ready(function() {
 	var err = $("#error");
 	if (!window.WebSocket) {
-		err.text("Your browser does not support WebSockets!");
+		err.text("Seu navegador não suporta WebSockets!");
 		return;
 	}
-	err.text("Loading... Please wait"); //TODO: show loading screen
+	err.text("Carregando... Por favor, aguarde."); //TODO: show loading screen
 	$.ajax("/port", {
 		type: "get",
 		dataType: "text",
@@ -42,7 +42,7 @@ $(document).ready(function() {
 			});
 			socket.on("pongs", function() {
 				socket.disconnect();
-				err.text("All done, have fun!");
+				err.text("");
 				$("#name").keypress(function(evt) {
 					if (evt.which === 13) run();
 				});
@@ -54,7 +54,7 @@ $(document).ready(function() {
 				});
 			});
 			socket.on("connect_error", function() {
-				err.text("Cannot connect with server. This probably is due to misconfigured proxy server. (Try using a different browser)");
+				err.text("Não é possível conectar-se ao servidor. Isso provavelmente se deve ao servidor proxy mal configurado. (Tente usar um navegador diferente ou reclame com Erick)");
 			});
 		}
 	});

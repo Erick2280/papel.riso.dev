@@ -168,7 +168,7 @@ function paintUIBar(ctx) {
 	ctx.fillText((userPortions * 100).toFixed(3) + "%", 5 + barOffset, consts.CELL_WIDTH - 5);
 
 	//Number of kills
-	var killsText = "Kills: " + client.kills;
+	var killsText = "Mortes: " + client.kills;
 	var killsOffset = 20 + BAR_WIDTH + barOffset;
 	ctx.fillText(killsText, killsOffset, consts.CELL_WIDTH - 5);
 
@@ -184,7 +184,7 @@ function paintUIBar(ctx) {
 	var rank = sorted.findIndex(function(val) {
 		return val.player === user;
 	});
-	ctx.fillText("Rank: " + (rank === -1 ? "--" : rank + 1) + " of " + sorted.length,
+	ctx.fillText("Ranking: " + (rank === -1 ? "--" : rank + 1) + " de " + sorted.length,
 	ctx.measureText(killsText).width + killsOffset + 20, consts.CELL_WIDTH - 5);
 
 	//Rolling the leaderboard bars
@@ -201,7 +201,7 @@ function paintUIBar(ctx) {
 	var leaderboardNum = Math.min(consts.LEADERBOARD_NUM, sorted.length);
 	for (var i = 0; i < leaderboardNum; i++) {
 		var player = sorted[i].player;
-		var name = player.name || "Unnamed";
+		var name = player.name || "Sem nome";
 		var portion = barProportionRolling[player.num].lag;
 		var nameWidth = ctx.measureText(name).width;
 		barSize = Math.ceil((BAR_WIDTH - MIN_BAR_WIDTH) * portion + MIN_BAR_WIDTH);
@@ -250,7 +250,7 @@ function paint(ctx) {
 
 	if ((!user || user.dead) && !showedDead) {
 		showedDead = true;
-		console.log("You died!");
+		console.log("Você morreu!");
 	}
 }
 

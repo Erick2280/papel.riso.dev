@@ -1,5 +1,5 @@
 {
-	"port": 8080,
+	"port": 80,
 	"bots": 5,
 	"consts": {
 		"GRID_COUNT": 100,
@@ -9,7 +9,7 @@
 		"MAX_PLAYERS": 30,
 		"NEW_PLAYER_LAG": 60,
 		"LEADERBOARD_NUM": 5,
-		"PREFIXES": "Angry Baby Crazy Diligent Excited Fat Greedy Hungry Interesting Japanese Kind Little Magic Naïve Old Powerful Quiet Rich Superman THU Undefined Valuable Wifeless Xiangbuchulai Young Zombie",
-		"NAMES": "Alice Bob Carol Dave Eve Francis Grace Hans Isabella Jason Kate Louis Margaret Nathan Olivia Paul Queen Richard Susan Thomas Uma Vivian Winnie Xander Yasmine Zach"
+		"PREFIXES": "Anjolina Eduardo Sílvio Ruy Ricardo Sérgio Fernando Manoel Renata Gustavo Kiev Tiago Robson Leonardo Heitor Marconi Francisco Victor André Antônio Guilherme Matheus João",
+		"NAMES": "Melo Meira Grisi Queiroz Castor Soares Lemos Souza Carvalho Gama Anjos Oliveira Lira Gomes Silva Gaudiot Ferreira Vasconcelos Neto Xavier Afonso Lima Valadares"
 	}
 }
